@@ -1,0 +1,96 @@
+// Widescreens
+@include mediaXl {
+    .heading {
+        &.lg-heading {
+            line-height: 1;
+        }
+    }
+}
+
+// Desktops & laptops
+@include mediaLg {
+    .heading {
+        line-height: 1;
+    }
+}
+
+// Tables & small laptops
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .heading {
+            line-height: 1;
+
+            .text-first {
+                font-size: 1.5rem;
+            }
+
+            .lg-heading {
+                font-size: 4.7rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    #about {
+        .info {
+            flex-direction: column;
+
+            .bio-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .info-secondary {
+                margin-top: 2rem;
+                margin-left: 0;
+            }
+        }
+    }
+
+    #skills {
+        .skills-block {
+            display: flex;
+            align-items: center;
+
+
+            p {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #work {
+        .projects {
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+
+            .item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Smartphones
+@include mediaSm {
+    main#home h1 {
+        font-size: 4rem;
+    }
+
+    main#about h1 {
+        font-size: 4rem;
+    }
+
+    main#work h1 {
+        font-size: 4rem;
+    }
+
+    main#contact h1 {
+        font-size: 4rem;
+    }
+}
