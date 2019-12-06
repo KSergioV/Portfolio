@@ -59,6 +59,7 @@
 
     width: 100%;
     visibility: hidden;
+    z-index: 2;
 
     &.show {
         visibility: visible;
@@ -74,6 +75,8 @@
         height: 100vh;
 
         overflow: hidden;
+
+
     }
 
     &-nav {
@@ -94,7 +97,7 @@
 
     .nav-item {
 
-        margin: 1rem 2rem;
+        margin: 1rem 0;
         transform: translate3d(600px, 0, 0);
         @include easeOut;
 
